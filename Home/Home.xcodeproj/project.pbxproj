@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FD305DE1CFE101C00498761 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305DD1CFE101C00498761 /* PlayersViewController.swift */; };
+		9FD305E01CFE105900498761 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305DF1CFE105900498761 /* LeagueViewController.swift */; };
+		9FD305E21CFE109000498761 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305E11CFE109000498761 /* UpdateViewController.swift */; };
 		9FE759571CFDF91F00629CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE759561CFDF91F00629CEC /* AppDelegate.swift */; };
-		9FE759591CFDF91F00629CEC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE759581CFDF91F00629CEC /* FirstViewController.swift */; };
-		9FE7595B1CFDF91F00629CEC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7595A1CFDF91F00629CEC /* SecondViewController.swift */; };
+		9FE759591CFDF91F00629CEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE759581CFDF91F00629CEC /* HomeViewController.swift */; };
 		9FE7595E1CFDF91F00629CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7595C1CFDF91F00629CEC /* Main.storyboard */; };
 		9FE759601CFDF91F00629CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7595F1CFDF91F00629CEC /* Assets.xcassets */; };
 		9FE759631CFDF91F00629CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE759611CFDF91F00629CEC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FD305DD1CFE101C00498761 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		9FD305DF1CFE105900498761 /* LeagueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
+		9FD305E11CFE109000498761 /* UpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		9FE759531CFDF91F00629CEC /* Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Home.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE759561CFDF91F00629CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FE759581CFDF91F00629CEC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9FE7595A1CFDF91F00629CEC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9FE759581CFDF91F00629CEC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9FE7595D1CFDF91F00629CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FE7595F1CFDF91F00629CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FE759621CFDF91F00629CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				9FE759561CFDF91F00629CEC /* AppDelegate.swift */,
-				9FE759581CFDF91F00629CEC /* FirstViewController.swift */,
-				9FE7595A1CFDF91F00629CEC /* SecondViewController.swift */,
+				9FE759581CFDF91F00629CEC /* HomeViewController.swift */,
+				9FD305DD1CFE101C00498761 /* PlayersViewController.swift */,
+				9FD305DF1CFE105900498761 /* LeagueViewController.swift */,
+				9FD305E11CFE109000498761 /* UpdateViewController.swift */,
 				9FE7595C1CFDF91F00629CEC /* Main.storyboard */,
 				9FE7595F1CFDF91F00629CEC /* Assets.xcassets */,
 				9FE759611CFDF91F00629CEC /* LaunchScreen.storyboard */,
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE7595B1CFDF91F00629CEC /* SecondViewController.swift in Sources */,
 				9FE759571CFDF91F00629CEC /* AppDelegate.swift in Sources */,
-				9FE759591CFDF91F00629CEC /* FirstViewController.swift in Sources */,
+				9FE759591CFDF91F00629CEC /* HomeViewController.swift in Sources */,
+				9FD305DE1CFE101C00498761 /* PlayersViewController.swift in Sources */,
+				9FD305E01CFE105900498761 /* LeagueViewController.swift in Sources */,
+				9FD305E21CFE109000498761 /* UpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +303,7 @@
 				9FE759691CFDF91F00629CEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
