@@ -5,12 +5,12 @@
       location = "group:Home/Home.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Update/Update.xcodeproj">
+      location = "container:Players/Players.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:League/League.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:Players/Players.xcodeproj">
+      location = "group:Update/Update.xcodeproj">
    </FileRef>
 </Workspace>
