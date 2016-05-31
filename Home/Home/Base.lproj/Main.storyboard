@@ -76,7 +76,13 @@
                             <constraint firstItem="MG8-Bw-dpK" firstAttribute="top" secondItem="19X-Qe-vQh" secondAttribute="bottom" constant="19" id="tpA-Ui-RR2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" selectedImage="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="first" selectedImage="first" id="acW-dT-cKf">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,7 +168,13 @@
                             <outlet property="delegate" destination="UYm-pJ-kuT" id="3gr-38-O2k"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="League" image="first" id="WiA-8O-5HH"/>
+                    <tabBarItem key="tabBarItem" title="League" image="first" id="WiA-8O-5HH">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uoi-VT-G4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,7 +211,13 @@
                             <outlet property="delegate" destination="dnx-ie-ggc" id="Ueh-g6-dSt"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Updates" image="second" id="qga-DR-RlF"/>
+                    <tabBarItem key="tabBarItem" title="Updates" image="second" id="qga-DR-RlF">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TBr-Xp-2or" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
