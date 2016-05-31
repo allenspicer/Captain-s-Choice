@@ -10,6 +10,11 @@ import UIKit
 
 class PlayersViewController: UITableViewController {
     
+
+    
+    var playerNames = ["Kramer", "George", "Newman"]
+    var playerAttendance = ["65", "90", "80"]
+    var images = [UIImage(named: "kramer.png"), UIImage(named: "george.png"), UIImage(named: "newman.png")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,29 +28,19 @@ class PlayersViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayersTableViewCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlayersTableViewCell", forIndexPath: indexPath) as! PlayerCell
         
-        cell.textLabel?.text = "Kramer"
-        
-        // 3
-        // Configure the cell...
-//        switch (indexPath.section) {
-//        case 0:
-//            cell.textLabel?.text = countriesinEurope[indexPath.row]
-//        case 1:
-//            cell.textLabel?.text = countriesinAsia[indexPath.row]
-//        case 2:
-//            cell.textLabel?.text = countriesInSouthAmerica[indexPath.row]
-//        //return sectionHeaderView
-//        default:
-//            cell.textLabel?.text = "Other"
-//        }
-//        
+        cell.playerImage.image = images[indexPath.row]
+        cell.playerNameLabel.text = playerNames[indexPath.row]
+        let playerAttendanceLabelFull = "\(playerAttendance[indexPath.row])% Attendance"
+        cell.playerAttendanceLabel.text = playerAttendanceLabelFull
+
+       
         return cell
     }
 

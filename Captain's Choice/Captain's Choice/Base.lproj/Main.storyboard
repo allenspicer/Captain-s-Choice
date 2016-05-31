@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -118,40 +119,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayersTableViewCell" rowHeight="60" id="Xeh-te-xc4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayersTableViewCell" rowHeight="60" id="Xeh-te-xc4" customClass="PlayerCell" customModule="Captain_s_Choice" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xeh-te-xc4" id="5vP-uY-17T">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLb-nZ-Bc3">
-                                            <rect key="frame" x="106" y="5" width="71" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attendance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwm-wY-V5a">
+                                            <rect key="frame" x="106" y="30" width="261" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="261" id="gyo-9m-wdw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRU-uc-Jqn">
-                                            <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rRU-uc-Jqn">
+                                            <rect key="frame" x="18" y="4" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="aD6-qC-aBt"/>
+                                            </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                     <integer key="value" value="25"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwm-wY-V5a">
-                                            <rect key="frame" x="106" y="30" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLb-nZ-Bc3">
+                                            <rect key="frame" x="106" y="4" width="71" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="71" id="Ozs-Un-ef8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lwm-wY-V5a" firstAttribute="top" secondItem="5vP-uY-17T" secondAttribute="topMargin" constant="22" id="D5r-Fl-G37"/>
+                                        <constraint firstItem="rRU-uc-Jqn" firstAttribute="top" secondItem="HLb-nZ-Bc3" secondAttribute="top" id="HyD-R1-5gJ"/>
+                                        <constraint firstItem="lwm-wY-V5a" firstAttribute="bottom" secondItem="5vP-uY-17T" secondAttribute="bottomMargin" id="MHC-8z-7xH"/>
+                                        <constraint firstItem="rRU-uc-Jqn" firstAttribute="top" secondItem="5vP-uY-17T" secondAttribute="topMargin" constant="-4" id="N0A-o1-1dp"/>
+                                        <constraint firstItem="rRU-uc-Jqn" firstAttribute="leading" secondItem="5vP-uY-17T" secondAttribute="leadingMargin" constant="10" id="TUV-b2-cOt"/>
+                                        <constraint firstItem="HLb-nZ-Bc3" firstAttribute="leading" secondItem="lwm-wY-V5a" secondAttribute="leading" id="lNE-rm-nae"/>
+                                        <constraint firstItem="HLb-nZ-Bc3" firstAttribute="leading" secondItem="rRU-uc-Jqn" secondAttribute="trailing" constant="38" id="pKA-Xc-5pp"/>
+                                        <constraint firstItem="rRU-uc-Jqn" firstAttribute="centerY" secondItem="5vP-uY-17T" secondAttribute="centerY" id="wVA-bf-h1l"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="playerAttendanceLabel" destination="lwm-wY-V5a" id="jIl-rS-Qsp"/>
+                                    <outlet property="playerImage" destination="rRU-uc-Jqn" id="uTn-2V-zYe"/>
+                                    <outlet property="playerNameLabel" destination="HLb-nZ-Bc3" id="4pG-R6-OIt"/>
                                     <segue destination="tLN-XQ-Qq0" kind="show" id="upt-ob-Lg3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="46H-2H-oGu" id="cuj-0i-Ad8"/>
                             <outlet property="delegate" destination="46H-2H-oGu" id="TYF-Al-DdG"/>

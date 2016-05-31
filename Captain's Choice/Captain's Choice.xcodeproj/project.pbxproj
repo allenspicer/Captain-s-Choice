@@ -16,6 +16,10 @@
 		9FD306071CFE22D800498761 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306041CFE22D800498761 /* 2.jpeg */; };
 		9FD306081CFE22D800498761 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306051CFE22D800498761 /* 3.jpeg */; };
 		9FD3060E1CFE3A7C00498761 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */; };
+		9FD306101CFE46A600498761 /* kramer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD3060F1CFE46A600498761 /* kramer.png */; };
+		9FD306121CFE4B3900498761 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD306111CFE4B3900498761 /* PlayerCell.swift */; };
+		9FD306141CFE4DCC00498761 /* george.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306131CFE4DCC00498761 /* george.png */; };
+		9FD306161CFE4DD200498761 /* newman.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306151CFE4DD200498761 /* newman.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		9FD306041CFE22D800498761 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpeg; path = ../../2.jpeg; sourceTree = "<group>"; };
 		9FD306051CFE22D800498761 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpeg; path = ../../3.jpeg; sourceTree = "<group>"; };
 		9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		9FD3060F1CFE46A600498761 /* kramer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kramer.png; sourceTree = "<group>"; };
+		9FD306111CFE4B3900498761 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		9FD306131CFE4DCC00498761 /* george.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = george.png; sourceTree = "<group>"; };
+		9FD306151CFE4DD200498761 /* newman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newman.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,21 +74,24 @@
 				9FD3060A1CFE29A600498761 /* Controllers */,
 				9FD305F51CFE1D7900498761 /* Main.storyboard */,
 				9FD305F81CFE1D7900498761 /* Assets.xcassets */,
-				9FD306091CFE22F000498761 /* Park Images */,
+				9FD306091CFE22F000498761 /* Images */,
 				9FD305FA1CFE1D7900498761 /* LaunchScreen.storyboard */,
 				9FD305FD1CFE1D7900498761 /* Info.plist */,
 			);
 			path = "Captain's Choice";
 			sourceTree = "<group>";
 		};
-		9FD306091CFE22F000498761 /* Park Images */ = {
+		9FD306091CFE22F000498761 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9FD3060F1CFE46A600498761 /* kramer.png */,
+				9FD306131CFE4DCC00498761 /* george.png */,
+				9FD306151CFE4DD200498761 /* newman.png */,
 				9FD306031CFE22D800498761 /* 1.jpeg */,
 				9FD306041CFE22D800498761 /* 2.jpeg */,
 				9FD306051CFE22D800498761 /* 3.jpeg */,
 			);
-			name = "Park Images";
+			name = Images;
 			sourceTree = "<group>";
 		};
 		9FD3060A1CFE29A600498761 /* Controllers */ = {
@@ -88,6 +99,7 @@
 			children = (
 				9FD305F11CFE1D7900498761 /* HomeViewController.swift */,
 				9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */,
+				9FD306111CFE4B3900498761 /* PlayerCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -152,10 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FD306071CFE22D800498761 /* 2.jpeg in Resources */,
+				9FD306101CFE46A600498761 /* kramer.png in Resources */,
 				9FD305FC1CFE1D7900498761 /* LaunchScreen.storyboard in Resources */,
 				9FD305F91CFE1D7900498761 /* Assets.xcassets in Resources */,
 				9FD306081CFE22D800498761 /* 3.jpeg in Resources */,
 				9FD305F71CFE1D7900498761 /* Main.storyboard in Resources */,
+				9FD306161CFE4DD200498761 /* newman.png in Resources */,
+				9FD306141CFE4DCC00498761 /* george.png in Resources */,
 				9FD306061CFE22D800498761 /* 1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD306121CFE4B3900498761 /* PlayerCell.swift in Sources */,
 				9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */,
 				9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */,
 				9FD3060E1CFE3A7C00498761 /* PlayersViewController.swift in Sources */,
