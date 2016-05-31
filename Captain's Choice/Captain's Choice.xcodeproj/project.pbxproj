@@ -9,20 +9,19 @@
 /* Begin PBXBuildFile section */
 		9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305EF1CFE1D7900498761 /* AppDelegate.swift */; };
 		9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305F11CFE1D7900498761 /* HomeViewController.swift */; };
-		9FD305F41CFE1D7900498761 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305F31CFE1D7900498761 /* SecondViewController.swift */; };
 		9FD305F71CFE1D7900498761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305F51CFE1D7900498761 /* Main.storyboard */; };
 		9FD305F91CFE1D7900498761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305F81CFE1D7900498761 /* Assets.xcassets */; };
 		9FD305FC1CFE1D7900498761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305FA1CFE1D7900498761 /* LaunchScreen.storyboard */; };
 		9FD306061CFE22D800498761 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306031CFE22D800498761 /* 1.jpeg */; };
 		9FD306071CFE22D800498761 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306041CFE22D800498761 /* 2.jpeg */; };
 		9FD306081CFE22D800498761 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306051CFE22D800498761 /* 3.jpeg */; };
+		9FD3060E1CFE3A7C00498761 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9FD305EC1CFE1D7900498761 /* Captain's Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Captain's Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD305EF1CFE1D7900498761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD305F11CFE1D7900498761 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		9FD305F31CFE1D7900498761 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9FD305F61CFE1D7900498761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FD305F81CFE1D7900498761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD305FB1CFE1D7900498761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		9FD306031CFE22D800498761 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpeg; path = ../../1.jpeg; sourceTree = "<group>"; };
 		9FD306041CFE22D800498761 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpeg; path = ../../2.jpeg; sourceTree = "<group>"; };
 		9FD306051CFE22D800498761 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpeg; path = ../../3.jpeg; sourceTree = "<group>"; };
+		9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,6 @@
 			children = (
 				9FD305EF1CFE1D7900498761 /* AppDelegate.swift */,
 				9FD3060A1CFE29A600498761 /* Controllers */,
-				9FD305F31CFE1D7900498761 /* SecondViewController.swift */,
 				9FD305F51CFE1D7900498761 /* Main.storyboard */,
 				9FD305F81CFE1D7900498761 /* Assets.xcassets */,
 				9FD306091CFE22F000498761 /* Park Images */,
@@ -88,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				9FD305F11CFE1D7900498761 /* HomeViewController.swift */,
+				9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -167,9 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD305F41CFE1D7900498761 /* SecondViewController.swift in Sources */,
 				9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */,
 				9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */,
+				9FD3060E1CFE3A7C00498761 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
