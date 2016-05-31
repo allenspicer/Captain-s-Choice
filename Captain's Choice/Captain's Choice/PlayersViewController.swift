@@ -34,7 +34,9 @@ class PlayersViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("PlayersTableViewCell", forIndexPath: indexPath) as! PlayerCell
-        
+        cell.playerImage.layer.cornerRadius = 25
+        cell.playerImage.clipsToBounds = true
+        cell.playerImage.layer.masksToBounds = true
         cell.playerImage.image = images[indexPath.row]
         cell.playerNameLabel.text = playerNames[indexPath.row]
         let playerAttendanceLabelFull = "\(playerAttendance[indexPath.row])% Attendance"
