@@ -5,7 +5,7 @@
       location = "group:Home/Home.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:Players/Players.xcodeproj">
+      location = "group:Players/Players.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:League/League.xcodeproj">
