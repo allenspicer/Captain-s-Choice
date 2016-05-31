@@ -13,6 +13,9 @@
 		9FD305F71CFE1D7900498761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305F51CFE1D7900498761 /* Main.storyboard */; };
 		9FD305F91CFE1D7900498761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305F81CFE1D7900498761 /* Assets.xcassets */; };
 		9FD305FC1CFE1D7900498761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305FA1CFE1D7900498761 /* LaunchScreen.storyboard */; };
+		9FD306061CFE22D800498761 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306031CFE22D800498761 /* 1.jpeg */; };
+		9FD306071CFE22D800498761 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306041CFE22D800498761 /* 2.jpeg */; };
+		9FD306081CFE22D800498761 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306051CFE22D800498761 /* 3.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		9FD305F81CFE1D7900498761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD305FB1CFE1D7900498761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD305FD1CFE1D7900498761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD306031CFE22D800498761 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpeg; path = ../../1.jpeg; sourceTree = "<group>"; };
+		9FD306041CFE22D800498761 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpeg; path = ../../2.jpeg; sourceTree = "<group>"; };
+		9FD306051CFE22D800498761 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpeg; path = ../../3.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +67,21 @@
 				9FD305F31CFE1D7900498761 /* SecondViewController.swift */,
 				9FD305F51CFE1D7900498761 /* Main.storyboard */,
 				9FD305F81CFE1D7900498761 /* Assets.xcassets */,
+				9FD306091CFE22F000498761 /* Park Images */,
 				9FD305FA1CFE1D7900498761 /* LaunchScreen.storyboard */,
 				9FD305FD1CFE1D7900498761 /* Info.plist */,
 			);
 			path = "Captain's Choice";
+			sourceTree = "<group>";
+		};
+		9FD306091CFE22F000498761 /* Park Images */ = {
+			isa = PBXGroup;
+			children = (
+				9FD306031CFE22D800498761 /* 1.jpeg */,
+				9FD306041CFE22D800498761 /* 2.jpeg */,
+				9FD306051CFE22D800498761 /* 3.jpeg */,
+			);
+			name = "Park Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +143,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD306071CFE22D800498761 /* 2.jpeg in Resources */,
 				9FD305FC1CFE1D7900498761 /* LaunchScreen.storyboard in Resources */,
 				9FD305F91CFE1D7900498761 /* Assets.xcassets in Resources */,
+				9FD306081CFE22D800498761 /* 3.jpeg in Resources */,
 				9FD305F71CFE1D7900498761 /* Main.storyboard in Resources */,
+				9FD306061CFE22D800498761 /* 1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
