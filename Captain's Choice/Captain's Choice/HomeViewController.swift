@@ -28,8 +28,9 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
     @IBAction func contactTeam(sender: UIButton) {
         
         if !MFMessageComposeViewController.canSendText() {
-            print("SMS services are not available")
-        }
+            print("Sorry amigo, SMS services are not available")
+            
+        }else{
         let composeVC = MFMessageComposeViewController()
         
         composeVC.messageComposeDelegate = self
@@ -42,7 +43,7 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
         self.presentViewController(composeVC, animated: true, completion: nil)
         
         
-    
+        }
         
     }
     
