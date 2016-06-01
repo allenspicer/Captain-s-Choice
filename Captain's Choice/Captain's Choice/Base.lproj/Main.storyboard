@@ -221,7 +221,7 @@
         <!--League-->
         <scene sceneID="TBw-V7-SfY">
             <objects>
-                <tableViewController id="m7X-oe-b0T" sceneMemberID="viewController">
+                <tableViewController id="m7X-oe-b0T" customClass="LeagueViewController" customModule="Captain_s_Choice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="30I-1v-7b2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
