@@ -108,6 +108,15 @@
 			name = Support;
 			sourceTree = "<group>";
 		};
+		9F21AE521CFF736300D240D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FD306191CFE5BE600498761 /* TeamCell.swift */,
+				9FD306111CFE4B3900498761 /* PlayerCell.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9FD305E31CFE1D7900498761 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +137,7 @@
 		9FD305EE1CFE1D7900498761 /* Captain's Choice */ = {
 			isa = PBXGroup;
 			children = (
+				9F21AE521CFF736300D240D7 /* Model */,
 				9F21AE511CFF71D300D240D7 /* Support */,
 				9FD3060A1CFE29A600498761 /* Controllers */,
 				9F21AE431CFF40FA00D240D7 /* Views */,
@@ -154,9 +164,7 @@
 			children = (
 				9FD305F11CFE1D7900498761 /* HomeViewController.swift */,
 				9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */,
-				9FD306111CFE4B3900498761 /* PlayerCell.swift */,
 				9FD306171CFE59B400498761 /* LeagueViewController.swift */,
-				9FD306191CFE5BE600498761 /* TeamCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

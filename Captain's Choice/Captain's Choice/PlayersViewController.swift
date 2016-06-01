@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class PlayersViewController: UITableViewController {
     
@@ -15,11 +16,15 @@ class PlayersViewController: UITableViewController {
     var playerNames = ["Kramer", "George", "Newman"]
     var playerAttendance = ["65", "90", "80"]
     var images = [UIImage(named: "kramer.png"), UIImage(named: "george.png"), UIImage(named: "newman.png")]
+   // let ref = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/name")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.tableView.tableHeaderView
-        
+     //   ref.observeEventType(.Value, withBlock:{snapshot in
+     //       print(snapshot.value)
+     //       }, withCancelBlock: { error in
+     //           print(error.description)
+      //  })
         
     }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
