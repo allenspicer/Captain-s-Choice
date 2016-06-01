@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		9F21AE421CFF40C200D240D7 /* dodgeball-mld.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F21AE411CFF40C200D240D7 /* dodgeball-mld.png */; };
 		9F21AE451CFF6EA800D240D7 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21AE441CFF6EA800D240D7 /* Firebase.framework */; };
+		9F21AE471CFF704B00D240D7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21AE461CFF704B00D240D7 /* libicucore.tbd */; };
+		9F21AE491CFF705900D240D7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21AE481CFF705900D240D7 /* libc++.tbd */; };
+		9F21AE4B1CFF706300D240D7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21AE4A1CFF706300D240D7 /* CFNetwork.framework */; };
+		9F21AE4D1CFF706C00D240D7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21AE4C1CFF706C00D240D7 /* Security.framework */; };
+		9F21AE4F1CFF70AD00D240D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21AE4E1CFF70AD00D240D7 /* SystemConfiguration.framework */; };
 		9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305EF1CFE1D7900498761 /* AppDelegate.swift */; };
 		9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305F11CFE1D7900498761 /* HomeViewController.swift */; };
 		9FD305F71CFE1D7900498761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305F51CFE1D7900498761 /* Main.storyboard */; };
@@ -29,6 +34,11 @@
 /* Begin PBXFileReference section */
 		9F21AE411CFF40C200D240D7 /* dodgeball-mld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dodgeball-mld.png"; sourceTree = "<group>"; };
 		9F21AE441CFF6EA800D240D7 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		9F21AE461CFF704B00D240D7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		9F21AE481CFF705900D240D7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9F21AE4A1CFF706300D240D7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9F21AE4C1CFF706C00D240D7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9F21AE4E1CFF70AD00D240D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9FD305EC1CFE1D7900498761 /* Captain's Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Captain's Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD305EF1CFE1D7900498761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD305F11CFE1D7900498761 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F21AE4F1CFF70AD00D240D7 /* SystemConfiguration.framework in Frameworks */,
+				9F21AE4D1CFF706C00D240D7 /* Security.framework in Frameworks */,
+				9F21AE4B1CFF706300D240D7 /* CFNetwork.framework in Frameworks */,
+				9F21AE491CFF705900D240D7 /* libc++.tbd in Frameworks */,
+				9F21AE471CFF704B00D240D7 /* libicucore.tbd in Frameworks */,
 				9F21AE451CFF6EA800D240D7 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,9 +80,32 @@
 			children = (
 				9FD305F51CFE1D7900498761 /* Main.storyboard */,
 				9FD305FA1CFE1D7900498761 /* LaunchScreen.storyboard */,
+				9FD305F81CFE1D7900498761 /* Assets.xcassets */,
 				9FD306091CFE22F000498761 /* Images */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		9F21AE501CFF71AC00D240D7 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9F21AE481CFF705900D240D7 /* libc++.tbd */,
+				9F21AE461CFF704B00D240D7 /* libicucore.tbd */,
+				9F21AE4E1CFF70AD00D240D7 /* SystemConfiguration.framework */,
+				9F21AE4C1CFF706C00D240D7 /* Security.framework */,
+				9F21AE4A1CFF706300D240D7 /* CFNetwork.framework */,
+				9F21AE441CFF6EA800D240D7 /* Firebase.framework */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		9F21AE511CFF71D300D240D7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9FD305EF1CFE1D7900498761 /* AppDelegate.swift */,
+				9FD305FD1CFE1D7900498761 /* Info.plist */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 		9FD305E31CFE1D7900498761 = {
@@ -75,7 +113,7 @@
 			children = (
 				9FD305EE1CFE1D7900498761 /* Captain's Choice */,
 				9FD305ED1CFE1D7900498761 /* Products */,
-				9F21AE441CFF6EA800D240D7 /* Firebase.framework */,
+				9F21AE501CFF71AC00D240D7 /* Firebase */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,11 +128,9 @@
 		9FD305EE1CFE1D7900498761 /* Captain's Choice */ = {
 			isa = PBXGroup;
 			children = (
-				9FD305EF1CFE1D7900498761 /* AppDelegate.swift */,
+				9F21AE511CFF71D300D240D7 /* Support */,
 				9FD3060A1CFE29A600498761 /* Controllers */,
 				9F21AE431CFF40FA00D240D7 /* Views */,
-				9FD305F81CFE1D7900498761 /* Assets.xcassets */,
-				9FD305FD1CFE1D7900498761 /* Info.plist */,
 			);
 			path = "Captain's Choice";
 			sourceTree = "<group>";
