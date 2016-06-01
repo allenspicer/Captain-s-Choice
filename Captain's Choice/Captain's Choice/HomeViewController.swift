@@ -36,8 +36,8 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
         composeVC.messageComposeDelegate = self
         
         // Configure the fields of the interface.
-        composeVC.recipients = ["4085551212"]
-        composeVC.body = "Hello from California!"
+        composeVC.recipients = ["4085551212", "4085551212", "4085551212", "4085551212", "4085551212"]
+        composeVC.body = "Sorry everyone. Our game today is cancelled"
         
         // Present the view controller modally.
         self.presentViewController(composeVC, animated: true, completion: nil)
