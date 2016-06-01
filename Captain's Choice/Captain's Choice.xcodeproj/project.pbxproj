@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F21AE401CFF3DA300D240D7 /* dodgeball-mld.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F21AE3F1CFF3DA300D240D7 /* dodgeball-mld.png */; };
 		9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305EF1CFE1D7900498761 /* AppDelegate.swift */; };
 		9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305F11CFE1D7900498761 /* HomeViewController.swift */; };
 		9FD305F71CFE1D7900498761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305F51CFE1D7900498761 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F21AE3F1CFF3DA300D240D7 /* dodgeball-mld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dodgeball-mld.png"; sourceTree = "<group>"; };
 		9FD305EC1CFE1D7900498761 /* Captain's Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Captain's Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD305EF1CFE1D7900498761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD305F11CFE1D7900498761 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		9FD306091CFE22F000498761 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9F21AE3F1CFF3DA300D240D7 /* dodgeball-mld.png */,
 				9FD3060F1CFE46A600498761 /* kramer.png */,
 				9FD306131CFE4DCC00498761 /* george.png */,
 				9FD306151CFE4DD200498761 /* newman.png */,
@@ -177,6 +180,7 @@
 				9FD305F71CFE1D7900498761 /* Main.storyboard in Resources */,
 				9FD306161CFE4DD200498761 /* newman.png in Resources */,
 				9FD306141CFE4DCC00498761 /* george.png in Resources */,
+				9F21AE401CFF3DA300D240D7 /* dodgeball-mld.png in Resources */,
 				9FD306061CFE22D800498761 /* 1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
