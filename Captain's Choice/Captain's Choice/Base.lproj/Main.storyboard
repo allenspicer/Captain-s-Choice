@@ -238,25 +238,36 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOR-RV-C7s">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOR-RV-C7s">
                                             <rect key="frame" x="103" y="11" width="148" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="148" id="HZA-UA-XVW"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCD-i6-RW5">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCD-i6-RW5">
                                             <rect key="frame" x="506" y="11" width="55" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-ei-DNv">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-ei-DNv">
                                             <rect key="frame" x="22" y="11" width="39" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rOR-RV-C7s" firstAttribute="baseline" secondItem="wCD-i6-RW5" secondAttribute="baseline" id="0Tf-2S-sgO"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="wCD-i6-RW5" secondAttribute="trailing" constant="31" id="1yl-pq-RjU"/>
+                                        <constraint firstItem="MWr-ei-DNv" firstAttribute="baseline" secondItem="rOR-RV-C7s" secondAttribute="baseline" id="FhT-WO-ree"/>
+                                        <constraint firstItem="MWr-ei-DNv" firstAttribute="centerY" secondItem="Q2b-rU-npS" secondAttribute="centerY" id="MgU-sT-FbS"/>
+                                        <constraint firstItem="MWr-ei-DNv" firstAttribute="leading" secondItem="Q2b-rU-npS" secondAttribute="leadingMargin" constant="14" id="yM6-IN-S6Z"/>
+                                        <constraint firstItem="rOR-RV-C7s" firstAttribute="leading" secondItem="MWr-ei-DNv" secondAttribute="trailing" constant="42" id="zHK-Ka-eFt"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="teamName" destination="rOR-RV-C7s" id="3kZ-QI-dV2"/>

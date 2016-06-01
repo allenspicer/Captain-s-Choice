@@ -28,7 +28,7 @@ class LeagueViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return teamNames.count
     }
     
     
