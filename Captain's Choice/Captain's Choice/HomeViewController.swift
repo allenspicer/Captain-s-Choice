@@ -19,8 +19,12 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
 
 
     override func viewDidLoad() {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
+        let image = UIImage(named: "1.jpeg")
+        imageView.image = image
+        self.view.addSubview(imageView)
         button.layer.borderColor = UIColor.whiteColor().CGColor
-        button.layer.borderWidth = 1
+        button.layer.borderWidth = 2
         super.viewDidLoad()
     }
     
