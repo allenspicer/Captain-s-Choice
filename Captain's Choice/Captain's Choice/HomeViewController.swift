@@ -15,14 +15,14 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
     @IBOutlet weak var opponentNameLabel: UILabel!
     @IBOutlet weak var gameTimeLabel: UILabel!
     @IBOutlet weak var gameLocationLabel: UILabel!
+    @IBOutlet weak var button: UIButton!
 
-    
 
     override func viewDidLoad() {
+        button.layer.borderColor = UIColor.whiteColor().CGColor
+        button.layer.borderWidth = 1
         super.viewDidLoad()
     }
-
-    
     
 
     @IBAction func contactTeam(sender: UIButton) {
@@ -42,7 +42,8 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
         
         // Present the view controller modally.
         self.presentViewController(composeVC, animated: true, completion: nil)
-        
+            
+            
         
         }
         
