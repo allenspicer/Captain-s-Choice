@@ -11,17 +11,34 @@ import Firebase
 
 class UpdatesViewController: UIViewController {
 
-    var count = 1
     override func viewDidLoad() {
         super.viewDidLoad()
-        let yposition = count*Int(view.bounds.height*0.1)
-        let rect = CGRectMake(CGFloat(view.bounds.width*0.1), CGFloat(yposition), CGFloat(view.bounds.width*0.8), CGFloat(view.bounds.height*0.2))
-        let update1 = UIView(frame: rect)
-        update1.tintColor = UIColor.orangeColor()
-       let updateColor = UIColor.init(colorLiteralRed: 123/255, green: 166/255, blue: 191/255, alpha: 1.0)
-        update1.layer.backgroundColor = updateColor.CGColor
-        view.addSubview(update1)
+        labelCreator(1)
         
         }
 
+    
+    
+    
+    
+    func labelCreator(count:Int){
+        let yposition = Int(view.bounds.height*0.1)
+        //orange square
+        let rect2 = CGRectMake(CGFloat((view.bounds.width*0.1)-5), CGFloat(yposition+2), CGFloat(view.bounds.width*0.4), CGFloat(view.bounds.height*0.03))
+        let titleView = UIView(frame: rect2)
+        titleView.tintColor = UIColor.orangeColor()
+        view.addSubview(titleView)
+        //blue update box
+        let rect = CGRectMake(CGFloat(view.bounds.width*0.1), CGFloat(yposition), CGFloat(view.bounds.width*0.8), CGFloat(view.bounds.height*0.2))
+        let update = UIView(frame: rect)
+        let updateColor = UIColor.init(colorLiteralRed: 123/255, green: 166/255, blue: 191/255, alpha: 1.0)
+        update.layer.backgroundColor = updateColor.CGColor
+        view.addSubview(update)
+        
+
+
+        
+        
+    }
+    
 }
