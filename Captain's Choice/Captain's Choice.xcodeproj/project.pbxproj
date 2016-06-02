@@ -14,6 +14,7 @@
 		9F21AE4D1CFF706C00D240D7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21AE4C1CFF706C00D240D7 /* Security.framework */; };
 		9F21AE4F1CFF70AD00D240D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21AE4E1CFF70AD00D240D7 /* SystemConfiguration.framework */; };
 		9F21AE541CFF820200D240D7 /* dodgeball-mld.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F21AE531CFF820200D240D7 /* dodgeball-mld.png */; };
+		9FB1FE4E1CFFC44900856022 /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB1FE4D1CFFC44900856022 /* UpdatesViewController.swift */; };
 		9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305EF1CFE1D7900498761 /* AppDelegate.swift */; };
 		9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD305F11CFE1D7900498761 /* HomeViewController.swift */; };
 		9FD305F71CFE1D7900498761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD305F51CFE1D7900498761 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		9F21AE4C1CFF706C00D240D7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9F21AE4E1CFF70AD00D240D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9F21AE531CFF820200D240D7 /* dodgeball-mld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dodgeball-mld.png"; sourceTree = "<group>"; };
+		9FB1FE4D1CFFC44900856022 /* UpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
 		9FD305EC1CFE1D7900498761 /* Captain's Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Captain's Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD305EF1CFE1D7900498761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD305F11CFE1D7900498761 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				9FD305FD1CFE1D7900498761 /* Info.plist */,
 			);
 			name = Support;
+			path = "Captain's Choice";
 			sourceTree = "<group>";
 		};
 		9F21AE521CFF736300D240D7 /* Model */ = {
@@ -121,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				9FD305EE1CFE1D7900498761 /* Captain's Choice */,
+				9F21AE511CFF71D300D240D7 /* Support */,
 				9FD305ED1CFE1D7900498761 /* Products */,
 				9F21AE501CFF71AC00D240D7 /* Firebase */,
 			);
@@ -138,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				9F21AE521CFF736300D240D7 /* Model */,
-				9F21AE511CFF71D300D240D7 /* Support */,
 				9FD3060A1CFE29A600498761 /* Controllers */,
 				9F21AE431CFF40FA00D240D7 /* Views */,
 			);
@@ -165,6 +168,7 @@
 				9FD305F11CFE1D7900498761 /* HomeViewController.swift */,
 				9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */,
 				9FD306171CFE59B400498761 /* LeagueViewController.swift */,
+				9FB1FE4D1CFFC44900856022 /* UpdatesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +254,7 @@
 			files = (
 				9FD306121CFE4B3900498761 /* PlayerCell.swift in Sources */,
 				9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */,
+				9FB1FE4E1CFFC44900856022 /* UpdatesViewController.swift in Sources */,
 				9FD3061A1CFE5BE600498761 /* TeamCell.swift in Sources */,
 				9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */,
 				9FD306181CFE59B400498761 /* LeagueViewController.swift in Sources */,
