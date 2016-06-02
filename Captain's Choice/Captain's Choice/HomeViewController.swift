@@ -20,12 +20,13 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
+    
+    
 
     @IBAction func contactTeam(sender: UIButton) {
+        
         
         if !MFMessageComposeViewController.canSendText() {
             print("Sorry amigo, SMS services are not available")
@@ -36,7 +37,7 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
         composeVC.messageComposeDelegate = self
         
         // Configure the fields of the interface.
-        composeVC.recipients = ["4085551212", "4085551212", "4085551212", "4085551212", "4085551212"]
+        composeVC.recipients = ["4085551212", "4085551211", "4085551213", "4085551214", "4085551215"]
         composeVC.body = "Sorry everyone. Our game today is cancelled"
         
         // Present the view controller modally.
