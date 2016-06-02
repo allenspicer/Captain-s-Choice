@@ -17,31 +17,6 @@ class UpdatesViewController: UIViewController {
         
         }
 
-    
-//    //setup header
-//    
-//    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 61.0
-//    }
-//    
-//    
-//    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        
-//        let label : UILabel = UILabel()
-//        label.text = "Players"
-//        label.textAlignment = NSTextAlignment.Center
-//        label.textColor = UIColor(red: 41/255, green: 82/255, blue: 106/255, alpha: 1.0)
-//        label.backgroundColor = UIColor(red: 123/255, green: 166/255, blue: 191/255, alpha: 1.0)
-//        
-//        return label
-//    }
-    
-    
-    
-    
-    
-    
-    
     func labelCreator(count:Int){
         let yposition = Int(view.bounds.height*0.1)
         //orange square
@@ -55,10 +30,7 @@ class UpdatesViewController: UIViewController {
         let updateColor = UIColor.init(colorLiteralRed: 123/255, green: 166/255, blue: 191/255, alpha: 1.0)
         update.layer.backgroundColor = updateColor.CGColor
         view.addSubview(update)
-        
-
-
-        
+ 
         
     }
     

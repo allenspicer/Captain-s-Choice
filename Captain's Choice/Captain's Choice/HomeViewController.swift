@@ -17,15 +17,27 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
     @IBOutlet weak var gameLocationLabel: UILabel!
     @IBOutlet weak var button: UIButton!
 
-
+    var whichPage:Int = 2
+    
     override func viewDidLoad() {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
-        let image = UIImage(named: "1.jpeg")
+        let image = UIImage(named: "\(whichPage).jpeg")
         imageView.image = image
-        self.view.addSubview(imageView)
+       self.view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
         button.layer.borderColor = UIColor.whiteColor().CGColor
         button.layer.borderWidth = 2
         super.viewDidLoad()
+
+    }
+    
+    @IBAction func backButton(sender: AnyObject) {
+        whichPage = whichPage - 1
+        self.view.reloadInputViews()
+    }
+    @IBAction func forwardButton(sender: AnyObject) {
+        whichPage = whichPage + 1
+        
     }
     
 
