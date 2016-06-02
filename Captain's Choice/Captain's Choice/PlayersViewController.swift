@@ -11,29 +11,46 @@ import Firebase
 
 class PlayersViewController: UITableViewController {
     
-
-    
-    var playerNames = ["Kramer", "George", "Newman"]
-    var playerAttendance = ["65", "90", "80"]
-    var images = [UIImage(named: "kramer.png"), UIImage(named: "george.png"), UIImage(named: "newman.png")]
-   // let ref = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/name")
+    var playerNames:Array<String>  = ["0"]
+    var PlayerAttendance:Array<Int>  = [0]
+    var images:Array<String>  = ["0"]
+    let playerNameRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/players/player/name")
+    let playerAttendanceRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/players/player/attendance/value")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   ref.observeEventType(.Value, withBlock:{snapshot in
-     //       print(snapshot.value)
-     //       }, withCancelBlock: { error in
-     //           print(error.description)
-      //  })
-        
-    }
+        playerNameRef.observeEventType(.Value, withBlock:{snapshot in
+            self.playerNames[0] = (snapshot.value) as! String
+            self.tableView.reloadData()
+            }, withCancelBlock: { error in
+                print(error.description)
+                
+        })
+        playerAttendanceRef.observeEventType(.Value, withBlock:{snapshot in
+            self.PlayerAttendance[0] = (snapshot.value) as! Int
+            self.tableView.reloadData()
+            }, withCancelBlock: { error in
+                print(error.description)
+                
+        })
+        playerNameRef.observeEventType(.Value, withBlock:{snapshot in
+            self.images[0] = snapshot.value as! String
+            self.tableView.reloadData()
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
+}
+    
+
+    
+
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return playerNames.count
+        return 1
     }
     
     
@@ -42,11 +59,18 @@ class PlayersViewController: UITableViewController {
         cell.playerImage.layer.cornerRadius = 30
         cell.playerImage.clipsToBounds = true
         cell.playerImage.layer.masksToBounds = true
-        cell.playerImage.image = images[indexPath.row]
+        
+        if (images != ["0"]) {
+            let imagelabel = String(images[indexPath.row]) + ".png"
+            cell.playerImage.image = UIImage(named: imagelabel)
+        }
+        if (playerNames != ["0"]) {
         cell.playerNameLabel.text = playerNames[indexPath.row]
-        let playerAttendanceLabelFull = "\(playerAttendance[indexPath.row])% Attendance"
+        }
+        if (PlayerAttendance != ["0"]) {
+        let playerAttendanceLabelFull = "\(PlayerAttendance[indexPath.row])% Attendance"
         cell.playerAttendanceLabel.text = playerAttendanceLabelFull
-
+        }
        
         return cell
     }
