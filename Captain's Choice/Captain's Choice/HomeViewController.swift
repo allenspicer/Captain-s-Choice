@@ -18,13 +18,10 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
     @IBOutlet weak var button: UIButton!
 
     var whichPage:Int = 2
+    let imageView:UIImageView = UIImageView()
     
     override func viewDidLoad() {
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
-        let image = UIImage(named: "\(whichPage).jpeg")
-        imageView.image = image
-       self.view.addSubview(imageView)
-        self.view.sendSubviewToBack(imageView)
+        loadHomePage()
         button.layer.borderColor = UIColor.whiteColor().CGColor
         button.layer.borderWidth = 2
         super.viewDidLoad()
@@ -32,18 +29,30 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
     }
     
     @IBAction func backButton(sender: AnyObject) {
+        if (whichPage > 1){
         whichPage = whichPage - 1
-        self.view.reloadInputViews()
+            loadHomePage()}
     }
     @IBAction func forwardButton(sender: AnyObject) {
+        if (whichPage < 3){
         whichPage = whichPage + 1
-        
+        loadHomePage()}
     }
     
-
+    func loadHomePage(){
+        if (self.view.subviews.contains(imageView)){
+            imageView.removeFromSuperview()
+        }
+        let frame2 = (frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: view.bounds.height))
+        imageView.frame = frame2
+        let image = UIImage(named: "\(whichPage).jpeg")
+        imageView.image = image
+        self.view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+    }
+    
+    
     @IBAction func contactTeam(sender: UIButton) {
-        
-        
         if !MFMessageComposeViewController.canSendText() {
             print("Sorry amigo, SMS services are not available")
             
@@ -58,8 +67,6 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
         
         // Present the view controller modally.
         self.presentViewController(composeVC, animated: true, completion: nil)
-            
-            
         
         }
         
