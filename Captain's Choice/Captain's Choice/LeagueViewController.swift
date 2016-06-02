@@ -45,6 +45,26 @@ class LeagueViewController: UITableViewController {
         
  
 }
+    
+    //setup header
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 61.0
+    }
+    
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let label : UILabel = UILabel()
+        label.text = "League"
+        label.textAlignment = NSTextAlignment.Center
+        label.font = label.font.fontWithSize(20)
+        label.textColor = UIColor(red: 41/255, green: 82/255, blue: 106/255, alpha: 1.0)
+        label.backgroundColor = UIColor(red: 123/255, green: 166/255, blue: 191/255, alpha: 1.0)
+        
+        return label
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }

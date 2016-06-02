@@ -53,7 +53,8 @@ class PlayersViewController: UITableViewController {
         let label : UILabel = UILabel()
             label.text = "Players"
             label.textAlignment = NSTextAlignment.Center
-            label.textColor = UIColor.blueColor()
+            label.font = label.font.fontWithSize(20)
+            label.textColor = UIColor(red: 41/255, green: 82/255, blue: 106/255, alpha: 1.0)
         label.backgroundColor = UIColor(red: 123/255, green: 166/255, blue: 191/255, alpha: 1.0)
 
         return label
