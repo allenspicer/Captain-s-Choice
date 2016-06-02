@@ -40,14 +40,30 @@ class PlayersViewController: UITableViewController {
                 print(error.description)
         })
 }
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        header.contentView.backgroundColor = UIColor(red: 123/255, green: 166/255, blue: 191/255, alpha: 1.0)
-        header.textLabel!.textColor = UIColor.blueColor() //make the text white
-       // header.alpha = 0.5
-        header.textLabel?.text = "Players"
-    }
 
+//setup header
+
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 61.0
+    }
+    
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let label : UILabel = UILabel()
+            label.text = "Players"
+            label.textAlignment = NSTextAlignment.Center
+            label.textColor = UIColor.blueColor()
+        label.backgroundColor = UIColor(red: 123/255, green: 166/255, blue: 191/255, alpha: 1.0)
+
+        return label
+    }
+    
+    
+    
+    
+    
+//setup cells
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 
