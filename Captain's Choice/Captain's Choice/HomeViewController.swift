@@ -17,7 +17,7 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
     @IBOutlet weak var gameLocationLabel: UILabel!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var daylabel: UIButton!
-    
+    @IBOutlet weak var winLossLabel: UILabel!
     var whichPage:Int = 2
     let imageView:UIImageView = UIImageView()
     
@@ -84,24 +84,38 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
     }
 
     func updateLabels(){
+        //today
         if (whichPage == 2){
             daylabel.setTitle("Today", forState: .Normal)
             button.setTitle("Contact Team", forState: .Normal)
             opponentNameLabel.text = "Flying Tigers"
             gameTimeLabel.text = "6:00PM"
             gameLocationLabel.text = "Hyde Ballpark"
+            winLossLabel.text = ""
+            winLossLabel.backgroundColor = UIColor.clearColor()
+            
+    //yesterday
         }else if(whichPage == 1){
             daylabel.setTitle("May 3", forState: .Normal)
             button.setTitle("Add Stats", forState: .Normal)
             opponentNameLabel.text = "Eagles"
             gameTimeLabel.text = "7:00PM"
             gameLocationLabel.text = "Powell Ballpark"
+            winLossLabel.text = "W 7 - 4"
+            winLossLabel.font = winLossLabel.font.fontWithSize(20)
+            winLossLabel.textColor = UIColor.whiteColor()
+            winLossLabel.backgroundColor = UIColor.greenColor()
+
+            
+    //tomorrow
         }else if (whichPage == 3){
             daylabel.setTitle("May 10", forState: .Normal)
             button.setTitle("View Team", forState: .Normal)
             opponentNameLabel.text = "Warlocks"
             gameTimeLabel.text = "8:00PM"
             gameLocationLabel.text = "David's Park"
+            winLossLabel.text = ""
+            winLossLabel.backgroundColor = UIColor.clearColor()
         }
 
         

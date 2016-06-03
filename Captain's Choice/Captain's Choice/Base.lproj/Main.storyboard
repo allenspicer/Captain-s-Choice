@@ -76,6 +76,12 @@
                                     <action selector="forwardButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="S0h-gd-KYh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCU-yl-S43">
+                                <rect key="frame" x="321" y="317" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -83,8 +89,10 @@
                             <constraint firstItem="N4z-yT-uRo" firstAttribute="top" secondItem="xLR-Pu-iMb" secondAttribute="bottom" constant="65" id="6An-9m-bOn"/>
                             <constraint firstItem="LlR-SL-IGe" firstAttribute="top" secondItem="l8k-K6-05M" secondAttribute="bottom" constant="205" id="9Z4-0B-QZt"/>
                             <constraint firstItem="xLR-Pu-iMb" firstAttribute="centerY" secondItem="xhE-6i-r94" secondAttribute="centerY" id="AjI-1z-jQE"/>
+                            <constraint firstItem="QCU-yl-S43" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="L52-VM-MTF"/>
                             <constraint firstItem="Hrc-Yu-PPs" firstAttribute="top" secondItem="N4z-yT-uRo" secondAttribute="bottom" constant="17" id="Ldl-I9-LqI"/>
                             <constraint firstItem="xLR-Pu-iMb" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="QbD-tp-n5M"/>
+                            <constraint firstItem="QCU-yl-S43" firstAttribute="top" secondItem="l8k-K6-05M" secondAttribute="bottom" constant="80" id="UKA-Yy-Gpc"/>
                             <constraint firstItem="l8k-K6-05M" firstAttribute="top" secondItem="Hrc-Yu-PPs" secondAttribute="bottom" constant="13" id="ZqM-f0-ZA9"/>
                             <constraint firstItem="LlR-SL-IGe" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="ajc-Gt-blD"/>
                             <constraint firstAttribute="leadingMargin" secondItem="xhE-6i-r94" secondAttribute="leading" id="bmW-Of-6cX"/>
@@ -108,6 +116,7 @@
                         <outlet property="gameLocationLabel" destination="l8k-K6-05M" id="9bH-yH-rW3"/>
                         <outlet property="gameTimeLabel" destination="Hrc-Yu-PPs" id="7Uf-wk-vUU"/>
                         <outlet property="opponentNameLabel" destination="N4z-yT-uRo" id="DSn-6Y-Clx"/>
+                        <outlet property="winLossLabel" destination="QCU-yl-S43" id="AQI-Ac-CXT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
