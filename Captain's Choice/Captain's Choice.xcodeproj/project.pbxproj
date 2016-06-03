@@ -31,6 +31,7 @@
 		9FD306181CFE59B400498761 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD306171CFE59B400498761 /* LeagueViewController.swift */; };
 		9FD3061A1CFE5BE600498761 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD306191CFE5BE600498761 /* TeamCell.swift */; };
 		9FD7FC4F1D01BC190005CCCF /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7FC4E1D01BC190005CCCF /* PlayerDetailViewController.swift */; };
+		9FD7FC511D01C07A0005CCCF /* LeagueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7FC501D01C07A0005CCCF /* LeagueDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		9FD306171CFE59B400498761 /* LeagueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		9FD306191CFE5BE600498761 /* TeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		9FD7FC4E1D01BC190005CCCF /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		9FD7FC501D01C07A0005CCCF /* LeagueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +171,10 @@
 			children = (
 				9FD305F11CFE1D7900498761 /* HomeViewController.swift */,
 				9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */,
-				9FD306171CFE59B400498761 /* LeagueViewController.swift */,
-				9FB1FE4D1CFFC44900856022 /* UpdatesViewController.swift */,
 				9FD7FC4E1D01BC190005CCCF /* PlayerDetailViewController.swift */,
+				9FD306171CFE59B400498761 /* LeagueViewController.swift */,
+				9FD7FC501D01C07A0005CCCF /* LeagueDetailViewController.swift */,
+				9FB1FE4D1CFFC44900856022 /* UpdatesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */,
 				9FB1FE4E1CFFC44900856022 /* UpdatesViewController.swift in Sources */,
 				9FD3061A1CFE5BE600498761 /* TeamCell.swift in Sources */,
+				9FD7FC511D01C07A0005CCCF /* LeagueDetailViewController.swift in Sources */,
 				9FD7FC4F1D01BC190005CCCF /* PlayerDetailViewController.swift in Sources */,
 				9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */,
 				9FD306181CFE59B400498761 /* LeagueViewController.swift in Sources */,

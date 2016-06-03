@@ -413,10 +413,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="1025"/>
         </scene>
-        <!--View Controller-->
+        <!--League Detail View Controller-->
         <scene sceneID="u1I-Sh-7lK">
             <objects>
-                <viewController id="4Mo-df-zDl" sceneMemberID="viewController">
+                <viewController id="4Mo-df-zDl" customClass="LeagueDetailViewController" customModule="Captain_s_Choice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q9s-oo-Lfx"/>
                         <viewControllerLayoutGuide type="bottom" id="8Hu-w6-VBS"/>
@@ -424,10 +424,27 @@
                     <view key="view" contentMode="scaleToFill" id="qUK-xQ-xDz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBz-wP-RDG">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="4Mo-df-zDl" eventType="touchUpInside" id="dg9-tR-cMr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="gBz-wP-RDG" secondAttribute="leading" id="B6Q-GD-Y6c"/>
+                            <constraint firstItem="gBz-wP-RDG" firstAttribute="top" secondItem="Q9s-oo-Lfx" secondAttribute="bottom" id="XOp-Pc-I7o"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="PgW-Po-PdL" kind="unwind" identifier="unwindToLeagueView" unwindAction="unwindToLeagueView:" id="syk-SQ-LKO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoE-0e-AOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PgW-Po-PdL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1392" y="1025"/>
         </scene>

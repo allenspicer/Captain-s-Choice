@@ -88,5 +88,8 @@ class LeagueViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func unwindToLeagueView(segue: UIStoryboardSegue) {
+    }
+    
     
 }
