@@ -13,5 +13,14 @@ class LeagueDetailViewController: UIViewController {
         self.performSegueWithIdentifier("unwindToLeagueView", sender: self)
 
     }
+    @IBOutlet weak var image: UIImageView!
 
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        image.image = UIImage(named: "george.png")
+        
+        
+    }
 }

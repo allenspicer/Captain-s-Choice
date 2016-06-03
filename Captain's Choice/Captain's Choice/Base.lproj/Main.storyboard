@@ -474,7 +474,14 @@
                                 <rect key="frame" x="423" y="44" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="TBM-ne-MvR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="eOI-WE-2Oq"/>
+                                    <constraint firstAttribute="height" constant="80" id="wie-Ki-j9J"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eOI-WE-2Oq"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -506,6 +513,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="image" destination="ZS3-1W-PZo" id="N26-YF-yJh"/>
                         <segue destination="PgW-Po-PdL" kind="unwind" identifier="unwindToLeagueView" unwindAction="unwindToLeagueView:" id="syk-SQ-LKO"/>
                     </connections>
                 </viewController>
