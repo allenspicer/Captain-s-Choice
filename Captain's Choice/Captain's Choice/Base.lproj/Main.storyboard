@@ -432,12 +432,78 @@
                                     <action selector="backButton:" destination="4Mo-df-zDl" eventType="touchUpInside" id="dg9-tR-cMr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ln1-YV-y6d">
+                                <rect key="frame" x="279" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Captain:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvp-Hr-7B0">
+                                <rect key="frame" x="45" y="74" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michael Scott" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAg-c3-dLF">
+                                <rect key="frame" x="48" y="103" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5p-9K-Xa7">
+                                <rect key="frame" x="48" y="164" width="66" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="36H-KF-day">
+                                <rect key="frame" x="45" y="196" width="118" height="244"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="AKT-ag-j7j"/>
+                                </constraints>
+                                <string key="text">Jim Halpert Dwight Schrute Andy Bernard Pam Beesly Kelly Kapoor Kevin Malone Creed Bratton Stanley Hudson Ryan Howard Toby Flenderson</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rZ-EH-v6k">
+                                <rect key="frame" x="244" y="499" width="112" height="30"/>
+                                <state key="normal" title="Contact Captain"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZS3-1W-PZo">
+                                <rect key="frame" x="423" y="44" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="TBM-ne-MvR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="gBz-wP-RDG" secondAttribute="leading" id="B6Q-GD-Y6c"/>
-                            <constraint firstItem="gBz-wP-RDG" firstAttribute="top" secondItem="Q9s-oo-Lfx" secondAttribute="bottom" id="XOp-Pc-I7o"/>
+                            <constraint firstItem="8Hu-w6-VBS" firstAttribute="top" secondItem="36H-KF-day" secondAttribute="bottom" constant="111" id="1C3-mm-vR9"/>
+                            <constraint firstItem="vAg-c3-dLF" firstAttribute="top" secondItem="Gvp-Hr-7B0" secondAttribute="bottom" constant="8" symbolic="YES" id="5gY-Nt-Gpc"/>
+                            <constraint firstItem="vAg-c3-dLF" firstAttribute="bottom" secondItem="ZS3-1W-PZo" secondAttribute="bottom" id="CGq-h7-nbz"/>
+                            <constraint firstItem="vAg-c3-dLF" firstAttribute="leading" secondItem="v5p-9K-Xa7" secondAttribute="leading" id="FoP-U9-pJs"/>
+                            <constraint firstItem="gBz-wP-RDG" firstAttribute="top" secondItem="Q9s-oo-Lfx" secondAttribute="bottom" id="HEW-pu-w19"/>
+                            <constraint firstItem="36H-KF-day" firstAttribute="top" secondItem="v5p-9K-Xa7" secondAttribute="bottom" constant="8" symbolic="YES" id="Ifh-Cc-7yy"/>
+                            <constraint firstItem="Gvp-Hr-7B0" firstAttribute="top" secondItem="gBz-wP-RDG" secondAttribute="bottom" constant="24" id="JVX-M2-uxs"/>
+                            <constraint firstItem="Gvp-Hr-7B0" firstAttribute="centerX" secondItem="vAg-c3-dLF" secondAttribute="centerX" id="KsI-kf-BDd"/>
+                            <constraint firstItem="gBz-wP-RDG" firstAttribute="top" secondItem="Ln1-YV-y6d" secondAttribute="top" id="Pfy-0Q-ex6"/>
+                            <constraint firstItem="ZS3-1W-PZo" firstAttribute="top" secondItem="Q9s-oo-Lfx" secondAttribute="bottom" constant="24" id="RFu-a9-j1q"/>
+                            <constraint firstItem="Ln1-YV-y6d" firstAttribute="centerX" secondItem="8rZ-EH-v6k" secondAttribute="centerX" id="VWf-Gc-zUu"/>
+                            <constraint firstItem="v5p-9K-Xa7" firstAttribute="top" secondItem="vAg-c3-dLF" secondAttribute="bottom" constant="40" id="bPT-az-THh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZS3-1W-PZo" secondAttribute="trailing" constant="77" id="cu6-DY-Pgf"/>
+                            <constraint firstItem="Ln1-YV-y6d" firstAttribute="centerX" secondItem="qUK-xQ-xDz" secondAttribute="centerX" id="d9q-Qd-Pux"/>
+                            <constraint firstItem="Gvp-Hr-7B0" firstAttribute="leading" secondItem="36H-KF-day" secondAttribute="leading" id="h99-lb-hZQ"/>
+                            <constraint firstItem="gBz-wP-RDG" firstAttribute="leading" secondItem="qUK-xQ-xDz" secondAttribute="leadingMargin" id="hTT-PC-Nr7"/>
+                            <constraint firstItem="Gvp-Hr-7B0" firstAttribute="centerY" secondItem="ZS3-1W-PZo" secondAttribute="centerY" id="jQF-qE-PTZ"/>
+                            <constraint firstItem="Gvp-Hr-7B0" firstAttribute="leading" secondItem="qUK-xQ-xDz" secondAttribute="leadingMargin" constant="25" id="yvQ-p9-vle"/>
+                            <constraint firstItem="8Hu-w6-VBS" firstAttribute="top" secondItem="8rZ-EH-v6k" secondAttribute="bottom" constant="22" id="zJu-w0-GQG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jQF-qE-PTZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <segue destination="PgW-Po-PdL" kind="unwind" identifier="unwindToLeagueView" unwindAction="unwindToLeagueView:" id="syk-SQ-LKO"/>
