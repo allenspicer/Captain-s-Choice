@@ -103,7 +103,7 @@
                             <constraint firstItem="xLR-Pu-iMb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="tzY-Pr-6Np"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="first" selectedImage="first" id="acW-dT-cKf">
+                    <tabBarItem key="tabBarItem" title="" systemItem="featured" id="acW-dT-cKf">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.16078431372549021" green="0.32156862745098042" blue="0.41568627450980394" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,7 +145,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Players-->
+        <!--Players View Controller-->
         <scene sceneID="s16-od-O69">
             <objects>
                 <tableViewController id="46H-2H-oGu" customClass="PlayersViewController" customModule="Captain_s_Choice" customModuleProvider="target" sceneMemberID="viewController">
@@ -223,7 +223,7 @@
                             <outlet property="delegate" destination="46H-2H-oGu" id="TYF-Al-DdG"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Players" selectedImage="second" id="UFD-us-lMx">
+                    <tabBarItem key="tabBarItem" selectedImage="second" systemItem="contacts" id="UFD-us-lMx">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -253,7 +253,7 @@
             </objects>
             <point key="canvasLocation" x="1392" y="353"/>
         </scene>
-        <!--League-->
+        <!--League View Controller-->
         <scene sceneID="TBw-V7-SfY">
             <objects>
                 <tableViewController id="m7X-oe-b0T" customClass="LeagueViewController" customModule="Captain_s_Choice" customModuleProvider="target" sceneMemberID="viewController">
@@ -313,7 +313,7 @@
                             <outlet property="delegate" destination="m7X-oe-b0T" id="SSl-PF-cdR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="League" selectedImage="first" id="13Y-Zx-Z7r">
+                    <tabBarItem key="tabBarItem" selectedImage="first" systemItem="search" id="13Y-Zx-Z7r">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -343,7 +343,7 @@
             </objects>
             <point key="canvasLocation" x="1392" y="1025"/>
         </scene>
-        <!--Updates-->
+        <!--Updates View Controller-->
         <scene sceneID="jct-Pe-9Fm">
             <objects>
                 <viewController id="iqN-6P-GnQ" customClass="UpdatesViewController" customModule="Captain_s_Choice" customModuleProvider="target" sceneMemberID="viewController">
@@ -436,7 +436,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Updates" selectedImage="second" id="t2D-lg-19B">
+                    <tabBarItem key="tabBarItem" selectedImage="second" systemItem="mostRecent" id="t2D-lg-19B">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
