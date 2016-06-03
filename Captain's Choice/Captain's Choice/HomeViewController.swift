@@ -71,7 +71,16 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
         // Present the view controller modally.
         self.presentViewController(composeVC, animated: true, completion: nil)
         
+            
+            
         }
+        
+    }
+    
+    
+    func createTeamText(){
+        
+        
         
     }
     
@@ -93,6 +102,8 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
             gameLocationLabel.text = "Hyde Ballpark"
             winLossLabel.text = ""
             winLossLabel.backgroundColor = UIColor.clearColor()
+            
+            
             
     //yesterday
         }else if(whichPage == 1){
