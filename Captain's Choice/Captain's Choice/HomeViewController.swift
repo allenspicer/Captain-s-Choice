@@ -118,12 +118,7 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
             winLossLabel.backgroundColor = UIColor.clearColor()
         }
 
-        
     }
-
-
-    
-    
 
 }
 
