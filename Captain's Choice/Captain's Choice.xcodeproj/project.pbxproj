@@ -30,6 +30,7 @@
 		9FD306161CFE4DD200498761 /* newman.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD306151CFE4DD200498761 /* newman.png */; };
 		9FD306181CFE59B400498761 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD306171CFE59B400498761 /* LeagueViewController.swift */; };
 		9FD3061A1CFE5BE600498761 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD306191CFE5BE600498761 /* TeamCell.swift */; };
+		9FD7FC4F1D01BC190005CCCF /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7FC4E1D01BC190005CCCF /* PlayerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		9FD306151CFE4DD200498761 /* newman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newman.png; sourceTree = "<group>"; };
 		9FD306171CFE59B400498761 /* LeagueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		9FD306191CFE5BE600498761 /* TeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		9FD7FC4E1D01BC190005CCCF /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				9FD3060D1CFE3A7C00498761 /* PlayersViewController.swift */,
 				9FD306171CFE59B400498761 /* LeagueViewController.swift */,
 				9FB1FE4D1CFFC44900856022 /* UpdatesViewController.swift */,
+				9FD7FC4E1D01BC190005CCCF /* PlayerDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				9FD305F01CFE1D7900498761 /* AppDelegate.swift in Sources */,
 				9FB1FE4E1CFFC44900856022 /* UpdatesViewController.swift in Sources */,
 				9FD3061A1CFE5BE600498761 /* TeamCell.swift in Sources */,
+				9FD7FC4F1D01BC190005CCCF /* PlayerDetailViewController.swift in Sources */,
 				9FD305F21CFE1D7900498761 /* HomeViewController.swift in Sources */,
 				9FD306181CFE59B400498761 /* LeagueViewController.swift in Sources */,
 				9FD3060E1CFE3A7C00498761 /* PlayersViewController.swift in Sources */,
