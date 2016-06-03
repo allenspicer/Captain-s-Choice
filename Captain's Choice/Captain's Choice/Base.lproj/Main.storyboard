@@ -289,6 +289,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZZ-9y-8yS">
                                 <rect key="frame" x="26" y="20" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="tLN-XQ-Qq0" eventType="touchUpInside" id="22V-1i-tl3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76U-mu-JoZ">
                                 <rect key="frame" x="52" y="170" width="55" height="21"/>
@@ -330,9 +333,11 @@
                     </view>
                     <connections>
                         <outlet property="image" destination="D46-MQ-ynw" id="naT-E6-ByB"/>
+                        <segue destination="rfU-lU-xrJ" kind="unwind" identifier="unwindToPlayerView" unwindAction="unwindToPlayerView:" id="vlJ-ex-2iN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BYM-Vn-ySJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rfU-lU-xrJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1392" y="353"/>
         </scene>

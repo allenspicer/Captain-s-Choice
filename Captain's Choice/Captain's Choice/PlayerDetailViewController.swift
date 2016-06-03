@@ -11,6 +11,9 @@ import UIKit
 class PlayerDetailViewController: UIViewController {
     
     @IBOutlet weak var image: UIImageView!
+    @IBAction func backButton(sender: UIButton) {
+        self.performSegueWithIdentifier("unwindToPlayerView", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,4 +22,10 @@ class PlayerDetailViewController: UIViewController {
         
         
     }
+    
+    
+
+    
+    
+    
 }

@@ -97,5 +97,7 @@ class PlayersViewController: UITableViewController {
         return cell
     }
 
+    @IBAction func unwindToPlayerView(segue: UIStoryboardSegue) {
+    }
 
 }
