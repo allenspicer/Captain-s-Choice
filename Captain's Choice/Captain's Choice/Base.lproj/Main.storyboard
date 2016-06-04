@@ -513,6 +513,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="atBatTextField" destination="Psz-d4-5RN" id="Uk7-Gd-lpt"/>
                         <outlet property="image" destination="D46-MQ-ynw" id="naT-E6-ByB"/>
                         <segue destination="rfU-lU-xrJ" kind="unwind" identifier="unwindToPlayerView" unwindAction="unwindToPlayerView:" id="vlJ-ex-2iN"/>
                     </connections>
@@ -812,6 +813,10 @@
         <scene sceneID="JvM-nG-elU">
             <objects>
                 <viewController id="v78-lH-H0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9fz-ny-jAl"/>
+                        <viewControllerLayoutGuide type="bottom" id="B5F-sJ-B5y"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xhW-tQ-XQ5">
                         <rect key="frame" x="0.0" y="0.0" width="280" height="285"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

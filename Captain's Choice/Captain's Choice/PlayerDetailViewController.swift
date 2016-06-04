@@ -23,7 +23,17 @@ class PlayerDetailViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var atBatTextField: UITextField!
     
+    func loadTextFields(){
+        
+    
+    }
+    
+    func updateTextFields(){
+        
+        
+    }
 
     
     
