@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlR-SL-IGe">
-                                <rect key="frame" x="200" y="442" width="200" height="45"/>
+                                <rect key="frame" x="200" y="359" width="200" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="mB6-Xy-xMI"/>
                                     <constraint firstAttribute="height" constant="45" id="rPR-6X-Fwp"/>
@@ -89,7 +89,7 @@
                         <constraints>
                             <constraint firstItem="A7e-vq-fvS" firstAttribute="centerY" secondItem="xLR-Pu-iMb" secondAttribute="centerY" id="1aF-eA-3ob"/>
                             <constraint firstItem="N4z-yT-uRo" firstAttribute="top" secondItem="xLR-Pu-iMb" secondAttribute="bottom" constant="65" id="6An-9m-bOn"/>
-                            <constraint firstItem="LlR-SL-IGe" firstAttribute="top" secondItem="l8k-K6-05M" secondAttribute="bottom" constant="205" id="9Z4-0B-QZt"/>
+                            <constraint firstItem="LlR-SL-IGe" firstAttribute="top" secondItem="l8k-K6-05M" secondAttribute="bottom" constant="122" id="9Z4-0B-QZt"/>
                             <constraint firstItem="xLR-Pu-iMb" firstAttribute="centerY" secondItem="xhE-6i-r94" secondAttribute="centerY" id="AjI-1z-jQE"/>
                             <constraint firstItem="QCU-yl-S43" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="L52-VM-MTF"/>
                             <constraint firstItem="Hrc-Yu-PPs" firstAttribute="top" secondItem="N4z-yT-uRo" secondAttribute="bottom" constant="17" id="Ldl-I9-LqI"/>
@@ -772,8 +772,18 @@
                                     <constraint firstAttribute="trailing" secondItem="IHB-e0-FFf" secondAttribute="trailing" id="rsa-95-RyW"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1q-aA-5iL">
+                                <rect key="frame" x="5" y="20" width="595" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXt-bl-P4I">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.44705882349999998" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.93419471153846156" green="0.64534585837271319" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XN3-MG-m5I" firstAttribute="top" secondItem="ysY-Sc-aIY" secondAttribute="bottom" constant="364" id="AU8-RT-Y8C"/>
                             <constraint firstItem="4cb-Ng-5Ad" firstAttribute="leading" secondItem="9Nf-jm-2Ph" secondAttribute="leading" constant="198" id="NiT-5B-T3F"/>
