@@ -20,6 +20,7 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
     @IBOutlet weak var winLossLabel: UILabel!
     var whichPage:Int = 2
     let imageView:UIImageView = UIImageView()
+    let green = UIColor.init(red: 39/255, green: 194/255, blue: 55/255, alpha: 1)
     
     override func viewDidLoad() {
         loadHomePage()
@@ -66,7 +67,7 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
         
         // Configure the fields of the interface.
         composeVC.recipients = ["4085551212", "4085551211", "4085551213", "4085551214", "4085551215"]
-        composeVC.body = "Sorry everyone. Our game today is cancelled"
+        composeVC.body = "Sorry everyone. Our game today is canceled"
         
         // Present the view controller modally.
         self.presentViewController(composeVC, animated: true, completion: nil)
@@ -112,10 +113,10 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
             opponentNameLabel.text = "Eagles"
             gameTimeLabel.text = "7:00PM"
             gameLocationLabel.text = "Powell Ballpark"
-            winLossLabel.text = "W 7 - 4"
+            winLossLabel.text = " W 7 - 4 "
             winLossLabel.font = winLossLabel.font.fontWithSize(20)
             winLossLabel.textColor = UIColor.whiteColor()
-            winLossLabel.backgroundColor = UIColor.greenColor()
+            winLossLabel.backgroundColor = green
 
             
     //tomorrow
