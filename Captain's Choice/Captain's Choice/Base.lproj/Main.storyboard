@@ -105,7 +105,7 @@
                             <constraint firstItem="xLR-Pu-iMb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="tzY-Pr-6Np"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="1.jpeg" id="acW-dT-cKf">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="acW-dT-cKf">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.16078431372549021" green="0.32156862745098042" blue="0.41568627450980394" alpha="1" colorSpace="calibratedRGB"/>
@@ -147,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Players View Controller-->
+        <!--Players-->
         <scene sceneID="s16-od-O69">
             <objects>
                 <tableViewController id="46H-2H-oGu" customClass="PlayersViewController" customModule="Captain_s_Choice" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,7 +225,7 @@
                             <outlet property="delegate" destination="46H-2H-oGu" id="TYF-Al-DdG"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" selectedImage="second" systemItem="contacts" id="UFD-us-lMx">
+                    <tabBarItem key="tabBarItem" title="Players" image="players" selectedImage="players" id="UFD-us-lMx">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -523,7 +523,7 @@
             </objects>
             <point key="canvasLocation" x="1392" y="353"/>
         </scene>
-        <!--League View Controller-->
+        <!--League-->
         <scene sceneID="TBw-V7-SfY">
             <objects>
                 <tableViewController id="m7X-oe-b0T" customClass="LeagueViewController" customModule="Captain_s_Choice" customModuleProvider="target" sceneMemberID="viewController">
@@ -583,7 +583,7 @@
                             <outlet property="delegate" destination="m7X-oe-b0T" id="SSl-PF-cdR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" selectedImage="first" systemItem="search" id="13Y-Zx-Z7r">
+                    <tabBarItem key="tabBarItem" title="League" image="league" selectedImage="league" id="13Y-Zx-Z7r">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.16078431369999999" green="0.32156862749999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -856,9 +856,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.jpeg" width="1500" height="998"/>
         <image name="alert" width="29" height="29"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="home" width="29" height="29"/>
+        <image name="league" width="29" height="29"/>
+        <image name="players" width="29" height="29"/>
     </resources>
 </document>
