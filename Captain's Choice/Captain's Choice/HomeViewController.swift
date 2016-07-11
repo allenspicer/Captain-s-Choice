@@ -71,19 +71,11 @@ class HomeViewController: UIViewController,  MFMessageComposeViewControllerDeleg
         
         // Present the view controller modally.
         self.presentViewController(composeVC, animated: true, completion: nil)
-        
-            
-            
+
         }
-        
     }
     
     
-    func createTeamText(){
-        
-        
-        
-    }
     
     func messageComposeViewController(controller: MFMessageComposeViewController,
                                       didFinishWithResult result: MessageComposeResult) {
