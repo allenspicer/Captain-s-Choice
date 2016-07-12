@@ -18,6 +18,7 @@ class LeagueViewController: UITableViewController {
     let teamNameRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/name")
     let teamRankRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/rank")
     let teamRecordRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/record")
+    let teamDictionary = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/")
     
     override func viewDidLoad() {
         super.viewDidLoad()
