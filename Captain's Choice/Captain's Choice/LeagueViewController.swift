@@ -15,10 +15,11 @@ class LeagueViewController: UITableViewController {
     var teamRecords:Array<String>  = ["0"]
     var teamNames:Array<String>  = ["0"]
     var teamRanks:Array<Int>  = [0]
+// var teamDictionary = [String:AnyObject]()
     let teamNameRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/name")
     let teamRankRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/rank")
     let teamRecordRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/record")
-    let teamDictionary = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/")
+//let teamDictionaryRef = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,13 @@ class LeagueViewController: UITableViewController {
                 print(error.description)
                 
         })
-        
+//        teamDictionaryRef.observeEventType(.Value, withBlock:{snapshot in
+//            self.teamDictionary = snapshot.value as! [String : AnyObject]
+//            self.tableView.reloadData()
+//            }, withCancelBlock: { error in
+//                print(error.description)
+//                
+//        })
  
 }
     
@@ -85,6 +92,11 @@ class LeagueViewController: UITableViewController {
         
         if (teamRecords != ["0"]) {
             cell.teamRecord.text = teamRecords[0]}
+        
+        
+        
+        
+        
         
         return cell
     }
